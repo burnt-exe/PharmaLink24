@@ -3,385 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharma24 Investment Proposal for Frankie</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Pharma24: Gauteng’s Healthcare Revolution</title>
     <style>
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
+
         body {
-            background: linear-gradient(135deg, #6dd5ed, #2193b0);
-            color: #333;
             line-height: 1.6;
+            color: #333;
+            background: #f0f4f8;
+            padding: 20px;
             overflow-x: hidden;
         }
+
+        h1, h2, h3 {
+            color: #154360;
+        }
+
+        /* Container */
         .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.95);
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #154360, #3498db);
+            color: white;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        h1, h2 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            animation: slideIn 1s ease-out;
-        }
-        @keyframes slideIn {
-            0% { transform: translateX(-100px); opacity: 0; }
-            100% { transform: translateX(0); opacity: 1; }
-        }
-        h2 {
-            font-size: 2em;
-            margin: 30px 0 20px;
+            margin-bottom: 40px;
             position: relative;
-        }
-        h2::after {
-            content: '';
-            width: 50px;
-            height: 4px;
-            background: #3498db;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        p {
-            font-size: 1.1em;
-            margin: 15px 0;
-        }
-        .intro {
-            text-align: center;
-            padding: 20px;
-            background: #ecf0f1;
-            border-radius: 10px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .table-container {
-            overflow-x: auto;
-            margin: 20px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 1em;
-            background: #fff;
-            border-radius: 10px;
             overflow: hidden;
         }
-        th, td {
+
+        .header h1 {
+            font-size: 3rem;
+            animation: fadeInDown 1s ease;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(30deg);
+            animation: rotateGlow 10s infinite linear;
+        }
+
+        /* Section Styles */
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s ease;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .content-item {
+            padding: 25px;
+            background: #ecf0f1;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .content-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Table */
+        .costs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        .costs-table th, .costs-table td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-        th {
-            background: #3498db;
-            color: #fff;
-            font-weight: bold;
+
+        .costs-table th {
+            background: #154360;
+            color: white;
         }
-        tr {
-            transition: transform 0.3s ease, background 0.3s ease;
+
+        .costs-table tr:nth-child(even) {
+            background: #f9fbfc;
         }
-        tr:hover {
-            background: #e6f7fa;
-            transform: scale(1.02);
-        }
-        .highlight {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        .value-prop, .profitability, .request {
-            background: #ecf0f1;
-            padding: 25px;
-            border-radius: 10px;
-            margin: 20px 0;
-            animation: fadeIn 2.5s ease-in-out;
-        }
-        .value-prop ul li {
-            margin: 10px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        .value-prop ul li::before {
-            content: '\f058';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            color: #3498db;
-            position: absolute;
-            left: 0;
-            top: 2px;
-        }
-        .chart-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        canvas {
-            max-width: 100%;
-            height: 300px;
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 200px;
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 10px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
+
+        /* Calculator */
         .calculator {
-            background: #3498db;
-            color: #fff;
-            padding: 20px;
+            margin-top: 20px;
+            padding: 25px;
+            background: #fff3e6;
             border-radius: 10px;
-            margin: 20px 0;
             text-align: center;
         }
-        .calculator input {
-            padding: 10px;
+
+        .calculator input, .calculator button {
+            padding: 12px;
             margin: 10px;
-            border: none;
             border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
         }
+
         .calculator button {
-            padding: 10px 20px;
-            background: #e74c3c;
-            color: #fff;
+            background: #e67e22;
+            color: white;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, transform 0.2s ease;
         }
+
         .calculator button:hover {
-            background: #c0392b;
+            background: #d35400;
+            transform: scale(1.1);
         }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 1em;
-            color: #7f8c8d;
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease, transform 0.2s ease;
         }
-        .contact {
-            font-weight: bold;
-            color: #3498db;
+
+        .cta-button:hover {
+            background: #d35400;
+            transform: scale(1.05);
+        }
+
+        /* Graphics Placeholder */
+        .graphic {
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.2rem; }
+            .header p { font-size: 1.1rem; }
+            .section { padding: 25px; }
+            .content-grid { grid-template-columns: 1fr; }
+            .costs-table th, .costs-table td { padding: 10px; font-size: 0.85rem; }
+        }
+
+        @media (max-width: 480px) {
+            .header { padding: 40px 10px; }
+            .header h1 { font-size: 1.8rem; }
+            .section h2 { font-size: 1.6rem; }
+            .content-item { padding: 15px; }
+            .calculator input, .calculator button { width: 100%; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Pharma24 Investment Proposal for Frankie</h1>
-        <div class="intro">
-            <p>Dear Frankie,</p>
-            <p>I’m Raydo, and I’m thrilled to share my vision for <strong>Pharma24</strong>, a 24/7 community pharmacy in Johannesburg, South Africa. Inspired by a decade-old memory in Germiston with my brother Matt and friend Robby, I’m building a healthcare hub to serve our community’s diverse needs—day or night. Let’s explore how Pharma24 can deliver both social impact and strong financial returns!</p>
-        </div>
+        <!-- Header -->
+        <header class="header">
+            <h1>Pharma24: Gauteng’s Healthcare Revolution</h1>
+            <p>Hey Frankie, let’s transform lives in Johannesburg together!</p>
+        </header>
 
-        <h2>Cost Breakdown for Pharma24</h2>
-        <p>Here’s a detailed breakdown of the estimated costs to launch Pharma24 in Johannesburg or nearby Germiston, reflecting both one-time and first-year recurring expenses.</p>
-        <div class="table-container">
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>Estimated Cost (ZAR)</th>
-                    <th>Notes</th>
-                </tr>
-                <tr>
-                    <td>Registration & Licensing</td>
-                    <td>SAPC application fees for pharmacy premises and ownership registration</td>
-                    <td>20,000 - 50,000</td>
-                    <td>Includes SAPC fees (adjusted by 2.8% for 2025).</td>
-                </tr>
-                <tr>
-                    <td>Employing a Pharmacist</td>
-                    <td>Salary for a full-time registered pharmacist</td>
-                    <td>360,000 - 480,000 annually</td>
-                    <td>Competitive pay to attract talent in a shortage market.</td>
-                </tr>
-                <tr>
-                    <td>Rent</td>
-                    <td>Monthly rental for a 50-100 sqm space</td>
-                    <td>96,000 - 360,000/year</td>
-                    <td>Germiston: R80–R150/sqm; Johannesburg: R150–R300/sqm.</td>
-                </tr>
-                <tr>
-                    <td>Acquiring Stock</td>
-                    <td>Initial inventory of prescription drugs, OTC meds</td>
-                    <td>200,000 - 500,000</td>
-                    <td>Depends on scale and supplier terms.</td>
-                </tr>
-                <tr>
-                    <td>Equipment & Setup</td>
-                    <td>Shelving, dispensing system, refrigeration, POS</td>
-                    <td>50,000 - 100,000</td>
-                    <td>Meets SAPC Good Pharmacy Practice standards.</td>
-                </tr>
-                <tr>
-                    <td>Staffing (Additional)</td>
-                    <td>Salaries for cashier/assistant (1-2 staff)</td>
-                    <td>96,000 - 180,000 annually</td>
-                    <td>Assumes 1-2 support staff.</td>
-                </tr>
-                <tr>
-                    <td>Utilities & Operations</td>
-                    <td>Electricity, water, internet, insurance</td>
-                    <td>60,000 - 120,000/year</td>
-                    <td>Includes liability and stock insurance.</td>
-                </tr>
-                <tr>
-                    <td>Marketing & Launch</td>
-                    <td>Signage, branding, opening promotions</td>
-                    <td>20,000 - 50,000</td>
-                    <td>Local advertising and launch event.</td>
-                </tr>
-                <tr>
-                    <td>Technology</td>
-                    <td>Pharmacy management software, hardware</td>
-                    <td>30,000 - 70,000</td>
-                    <td>Includes optional telehealth setup.</td>
-                </tr>
-                <tr>
-                    <td>Unforeseen Costs</td>
-                    <td>Contingency for delays, repairs, stock shortages</td>
-                    <td>50,000 - 100,000</td>
-                    <td>Buffer for unexpected issues.</td>
-                </tr>
-                <tr>
-                    <td class="highlight">Total Estimated Startup Costs</td>
-                    <td>Sum of all one-time and first-year costs</td>
-                    <td class="highlight">995,000 - 2,010,000</td>
-                    <td>Lower end for Germiston; higher for central Johannesburg.</td>
-                </tr>
+        <!-- Introduction -->
+        <section class="section">
+            <h2>A Vision for Gauteng</h2>
+            <p>Frankie, I’m Raydo—driven by a decade-old memory in Germiston with Matt and Robby. Pharma24 is my bold plan for a 24/7 pharmacy in Johannesburg, tackling Gauteng’s urgent healthcare gaps. This isn’t just a business—it’s a lifeline for our community and a golden opportunity for you!</p>
+        </section>
+
+        <!-- Why Gauteng? -->
+        <section class="section">
+            <h2>Why Gauteng?</h2>
+            <div class="content-grid">
+                <div class="content-item" onclick="alert('Gauteng’s 15M+ people need reliable healthcare—Pharma24 delivers 24/7!')">
+                    <h3>High Demand</h3>
+                    <p>Gauteng’s 15M+ residents face pharmacy shortages, especially after hours.</p>
+                </div>
+                <div class="content-item" onclick="alert('6.7% annual growth—R643.5B market by 2025!')">
+                    <h3>Growth Potential</h3>
+                    <p>South Africa’s pharma market is booming—6.7% CAGR in Gauteng.</p>
+                </div>
+                <div class="content-item" onclick="alert('Serving Soweto to Sandton with accessible care.')">
+                    <h3>Community Impact</h3>
+                    <p>From Soweto to Sandton, we’ll bridge healthcare gaps.</p>
+                </div>
+            </div>
+            <img src="https://via.placeholder.com/600x300.png?text=Gauteng+Map+Graphic" alt="Gauteng Map" class="graphic">
+        </section>
+
+        <!-- Cost Breakdown -->
+        <section class="section">
+            <h2>Investment Breakdown</h2>
+            <p>Here’s what it takes to launch Pharma24 in Gauteng (ZAR):</p>
+            <table class="costs-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Cost (ZAR)</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Registration</td>
+                        <td>SAPC fees</td>
+                        <td>20,000 - 50,000</td>
+                        <td>Adjusted for 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Pharmacist</td>
+                        <td>Full-time salary</td>
+                        <td>360,000 - 480,000/yr</td>
+                        <td>Competitive pay</td>
+                    </tr>
+                    <tr>
+                        <td>Rent</td>
+                        <td>50-100 sqm</td>
+                        <td>96,000 - 360,000/yr</td>
+                        <td>Germiston vs. Joburg</td>
+                    </tr>
+                    <tr>
+                        <td>Stock</td>
+                        <td>Initial inventory</td>
+                        <td>200,000 - 500,000</td>
+                        <td>Supplier-dependent</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td>Shelving, systems</td>
+                        <td>50,000 - 100,000</td>
+                        <td>SAPC standards</td>
+                    </tr>
+                    <tr>
+                        <td>Staffing</td>
+                        <td>1-2 assistants</td>
+                        <td>96,000 - 180,000/yr</td>
+                        <td>Support roles</td>
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td>Electricity, insurance</td>
+                        <td>60,000 - 120,000/yr</td>
+                        <td>Liability included</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Signage, launch</td>
+                        <td>20,000 - 50,000</td>
+                        <td>Local focus</td>
+                    </tr>
+                    <tr>
+                        <td>Tech</td>
+                        <td>Software, hardware</td>
+                        <td>30,000 - 70,000</td>
+                        <td>Telehealth option</td>
+                    </tr>
+                    <tr>
+                        <td>Contingency</td>
+                        <td>Buffer</td>
+                        <td>50,000 - 100,000</td>
+                        <td>Unforeseen costs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>Startup + Year 1</strong></td>
+                        <td><strong>995,000 - 2,010,000</strong></td>
+                        <td>Gauteng-specific</td>
+                    </tr>
+                </tbody>
             </table>
-        </div>
+            <img src="https://via.placeholder.com/600x300.png?text=Cost+Pie+Chart" alt="Cost Pie Chart" class="graphic">
+        </section>
 
-        <div class="value-prop">
-            <h2>Value Proposition</h2>
-            <p>Pharma24 is a 24/7 community-focused pharmacy addressing Johannesburg’s healthcare needs with a unique approach:</p>
-            <ul>
-                <li><strong>24/7 Access:</strong> One of the few 24-hour pharmacies in Johannesburg, ensuring critical access at any time.</li>
-                <li><strong>Community Engagement:</strong> Free health screenings and awareness events, building trust in underserved areas.</li>
-                <li><strong>Specialized Services:</strong> HIV testing, chronic medication delivery, and late-night hours for urgent needs.</li>
-                <li><strong>Social Impact:</strong> Combating black market pharmaceuticals with quality, regulated services.</li>
-                <li><strong>Market Growth:</strong> Tapping into a pharmaceutical market growing at 6.7% annually, reaching R643.5 billion by 2025.</li>
-            </ul>
-        </div>
-
-        <div class="profitability">
-            <h2>The Bottom Line: Profitability of Pharma24</h2>
-            <p>Pharma24 is poised for profitability within 2-3 years, driven by high demand and our unique 24/7 model. Here’s a breakdown:</p>
-            <ul>
-                <li><strong>Revenue Streams:</strong> Prescription sales, OTC meds, health products, and specialized services (HIV testing, consultations).</li>
-                <li><strong>Projected Revenue:</strong> Year 1: R1.5M | Year 2: R2.8M | Year 3: R4.2M (based on 15-20% annual growth in Johannesburg’s pharmacy sector).</li>
-                <li><strong>Break-Even Point:</strong> Expected within 18-24 months, assuming 500 monthly customers with an average spend of R500.</li>
-                <li><strong>Profit Margin:</strong> Estimated at 20-25% after Year 1, improving to 30% by Year 3 as we scale and optimize operations.</li>
-            </ul>
-            <div class="chart-container">
-                <canvas id="profitChart"></canvas>
+        <!-- Value Proposition -->
+        <section class="section">
+            <h2>Why Pharma24?</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <h3>24/7 Lifeline</h3>
+                    <p>Rare 24-hour access for Gauteng’s urgent needs.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Community First</h3>
+                    <p>Free screenings, building trust locally.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Specialized Care</h3>
+                    <p>HIV testing, chronic meds delivery.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Social Good</h3>
+                    <p>Fighting black market drugs.</p>
+                </div>
             </div>
+        </section>
+
+        <!-- Profitability -->
+        <section class="section">
+            <h2>Your Return on Impact</h2>
+            <p>Pharma24 promises profitability in 2-3 years:</p>
+            <ul>
+                <li><strong>Revenue:</strong> Year 1: R1,500,000 | Year 2: R2,800,000 | Year 3: R4,200,000 (15-20% growth).</li>
+                <li><strong>Break-Even:</strong> 18-24 months (500 customers, R500 avg.).</li>
+                <li><strong>Margin:</strong> 20-25% Year 1, 30% Year 3.</li>
+            </ul>
             <div class="calculator">
-                <h3>Calculate Potential Returns</h3>
-                <p>Enter your investment amount to see estimated returns over 3 years:</p>
-                <input type="number" id="investmentAmount" placeholder="Enter ZAR (e.g., 1500000)" min="500000" max="3000000">
+                <h3>See Your Returns!</h3>
+                <p>Enter your investment (ZAR):</p>
+                <input type="number" id="investment" min="0" placeholder="e.g., 1500000">
                 <button onclick="calculateReturns()">Calculate</button>
-                <p id="returnResult"></p>
+                <p id="result" style="font-weight: bold; color: #154360;"></p>
             </div>
-        </div>
+            <img src="https://via.placeholder.com/600x300.png?text=Revenue+Growth+Chart" alt="Revenue Chart" class="graphic">
+        </section>
 
-        <div class="request">
-            <h2>Request for Capital</h2>
-            <p>I’m seeking an investment of <span class="highlight">ZAR 1,500,000</span> to launch Pharma24 and ensure a strong start. This capital will cover startup costs and first-year operations, positioning us for profitability within 2-3 years. In return, I offer a competitive equity stake and a detailed business plan projecting strong returns.</p>
-            <p>Let’s discuss how Pharma24 can be a win-win for both of us, Frankie! Please reach out at <span class="contact">[Your Email/Phone Number]</span>.</p>
-        </div>
-
-        <div class="footer">
-            <p>Thank you for considering Pharma24, Frankie. Let’s build a healthier Johannesburg together!</p>
-            <p>Raydo | Founder of Pharma24</p>
-        </div>
+        <!-- Call to Action -->
+        <section class="section" style="text-align: center;">
+            <h2>Frankie, Let’s Do This!</h2>
+            <p>I need R1,500,000 to launch Pharma24—offering you equity and a stake in Gauteng’s future. Contact me to make it happen!</p>
+            <a href="mailto:your-email@example.com" class="cta-button">Join the Revolution</a>
+        </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-        // Profit Chart
-        const ctx = document.getElementById('profitChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Year 1', 'Year 2', 'Year 3'],
-                datasets: [{
-                    label: 'Revenue (ZAR)',
-                    data: [1500000, 2800000, 4200000],
-                    borderColor: '#3498db',
-                    backgroundColor: 'rgba(52, 152, 219, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                }, {
-                    label: 'Profit (ZAR)',
-                    data: [300000, 700000, 1260000],
-                    borderColor: '#e74c3c',
-                    backgroundColor: 'rgba(231, 76, 60, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        title: { display: true, text: 'Amount (ZAR)' }
-                    }
-                },
-                plugins: {
-                    legend: { position: 'top' },
-                    tooltip: { mode: 'index', intersect: false }
-                }
-            }
-        });
-
-        // Profitability Calculator
         function calculateReturns() {
-            const investment = parseFloat(document.getElementById('investmentAmount').value);
-            const resultElement = document.getElementById('returnResult');
-            if (isNaN(investment) || investment < 500000 || investment > 3000000) {
-                resultElement.innerHTML = 'Please enter a valid investment amount between ZAR 500,000 and ZAR 3,000,000.';
-                return;
-            }
-            const year1Return = investment * 0.2; // 20% return in Year 1
-            const year2Return = investment * 0.47; // 47% cumulative return by Year 2
-            const year3Return = investment * 0.84; // 84% cumulative return by Year 3
-            resultElement.innerHTML = `
-                <strong>Estimated Returns:</strong><br>
-                Year 1: ZAR ${year1Return.toLocaleString()}<br>
-                Year 2: ZAR ${year2Return.toLocaleString()}<br>
-                Year 3: ZAR ${year3Return.toLocaleString()}
+            const investment = parseFloat(document.getElementById('investment').value) || 0;
+            const year1Return = investment * 0.15; // 15% Year 1
+            const year2Return = investment * 0.25; // 25% Year 2
+            const year3Return = investment * 0.35; // 35% Year 3
+            const totalReturn = year1Return + year2Return + year3Return;
+
+            document.getElementById('result').innerHTML = `
+                Year 1: R${year1Return.toLocaleString('en-ZA')}<br>
+                Year 2: R${year2Return.toLocaleString('en-ZA')}<br>
+                Year 3: R${year3Return.toLocaleString('en-ZA')}<br>
+                <strong>Total: R${totalReturn.toLocaleString('en-ZA')}</strong>
             `;
         }
     </script>
