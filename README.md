@@ -1,97 +1,94 @@
-# Pharma24 🏥💊
+# 🏥 PharmaLink24: Community Pharmacy in Johannesburg
 
-![Pharma24 Banner](https://img.shields.io/badge/Pharma24-24%2F7%20Healthcare-blue?style=for-the-badge&logo=heart&logoColor=white)  
-![GitHub repo size](https://img.shields.io/github/repo-size/[YourUsername]/Pharma24?style=flat-square)  
-![GitHub issues](https://img.shields.io/github/issues/[YourUsername]/Pharma24?style=flat-square)  
-![GitHub stars](https://img.shields.io/github/stars/[YourUsername]/Pharma24?style=flat-square)  
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)  
-![Profile Views](https://komarev.com/ghpvc/?username=[YourUsername]&label=Profile%20Views&color=brightgreen&style=flat-square)
+![PharmaLink24](https://img.shields.io/badge/PharmaLink24-24/7%20Access-blue?style=for-the-badge&logo=medicines&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![Issues](https://img.shields.io/github/issues/burnt-exe/PharmaLink24?style=flat-square)
+![Stars](https://img.shields.io/github/stars/burnt-exe/PharmaLink24?style=flat-square)
+![Views](https://komarev.com/ghpvc/?username=burnt-exe&color=blue&style=flat-square)
 
-## 🌍 Pharma24: Your 24/7 Community Pharmacy in Johannesburg
-
-Welcome to **Pharma24**, a project to launch a 24/7 community-focused pharmacy in Johannesburg, South Africa. Inspired by a decade-old memory in Germiston with my brother Matt and friend Robby, I (Raydo) am building a healthcare hub to serve the diverse needs of our community—day or night. This repository documents our journey, from planning to execution, and invites collaboration to make healthcare more accessible.
-
-### 📖 Project Overview
-
-Pharma24 aims to address the growing demand for pharmaceutical services in Johannesburg, a city with a high disease burden and uneven healthcare access. We’re focusing on underserved areas like Germiston and Soweto, offering personalized services, HIV testing, chronic medication delivery, and 24/7 availability to meet urgent needs. The name "Pharma24" reflects our commitment to being there for the community whenever they need us.
+> **Digitally enabled. Clinically driven. Locally rooted.**
 
 ---
 
-## 🌟 Value Proposition
+## 🚀 About PharmaLink24
 
-Pharma24 isn’t just a pharmacy—it’s a mission to improve public health in Johannesburg, around the clock. Here’s why this project stands out:
+**PharmaLink24** is a hybrid, 24/7 pharmacy project based in Johannesburg. We aim to revolutionize community access to medicine, primary healthcare services, and wellness tools through:
 
-- **24/7 Access**: As one of the few 24-hour pharmacies in Johannesburg, we’ll provide critical access to medications and healthcare services at any time, addressing urgent needs in a city with limited late-night options.
-- **Community Focus**: Building on my personal connection to the area, we’ll create a trusted space with free health screenings and awareness events.
-- **Underserved Markets**: Targeting areas with limited healthcare access, filling a critical gap left by corporate chains.
-- **Specialized Services**: Offering HIV testing, chronic medication delivery, and extended hours to meet diverse needs.
-- **Social Impact**: Combating black market pharmaceuticals by providing quality, regulated services, improving public health outcomes.
-- **Growth Potential**: The South African pharmaceutical market is projected to grow at 6.7% annually, reaching R643.5 billion by 2025. Pharma24 is positioned to tap into this demand with a community-driven, 24/7 approach.
+- 🏪 After-hours medicine dispensing
+- 📦 Doorstep delivery and tele-pharmacy services
+- 💉 HIV testing, immunizations, and wellness screenings
+- 📲 Rx locator and e-clinic booking tools
 
-Join us to make a difference while tapping into a lucrative market with strong financial and social returns!
+We blend technology, trusted care, and community roots to bridge the healthcare access gap in Gauteng.
 
 ---
 
-## 📈 Project Status
+## 💡 Why It Matters
 
-We’re in the planning phase, with a detailed cost breakdown and business plan ready for Pharma24. Here’s a quick look at the estimated startup costs:
+Johannesburg, with over 6 million residents, suffers from:
+- Limited pharmacy access after 8PM
+- Long queues and overwhelmed public clinics
+- Gaps in adherence for chronic treatment
 
-| Category               | Estimated Cost (ZAR)   |
-|------------------------|------------------------|
-| Registration & Licensing | 20,000 - 50,000      |
-| Employing a Pharmacist | 360,000 - 480,000/year |
-| Rent                   | 96,000 - 360,000/year |
-| Acquiring Stock        | 200,000 - 500,000     |
-| Total Startup Costs    | 995,000 - 2,010,000   |
-
-For the full breakdown, check our [Investment Proposal](#investment-proposal).
+**PharmaLink24 fills this gap** by providing:
+- 📆 24/7 pharmacy operations
+- 📱 Digitally enabled booking and refill reminders
+- 👩‍⚕️ Locally stationed pharmacists & assistants
 
 ---
 
-## 🖼️ Open Commons Graphics
+## 📊 Investment Opportunity
 
-We believe in the power of community and openness. Here are some graphics that reflect our values:
+We’re raising **R450,000** in startup capital. Your support funds:
+- Licensing & SAPC/SAPRA compliance
+- Telehealth systems and mobile app integration
+- Rental, stock & staffing for 6–12 months runway
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/opengovpartnership/opencommons/master/assets/images/open-commons-logo.png" alt="Open Commons Logo" width="200"/>
-  <br>
-  <img src="https://img.shields.io/badge/Community-Driven-brightgreen?style=for-the-badge&logo=heart&logoColor=white" alt="Community Driven"/>
-  <br>
-  <img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=for-the-badge" alt="Open Source Love"/>
-</p>
+### 💼 Terms:
+- ✅ 30% equity in PharmaLink24 (Pty) Ltd
+- 🔁 Optional 1.5× buyback after 3 years
+- 📈 Quarterly profit reports & dividend rights
 
-These graphics symbolize our commitment to transparency, collaboration, and community-driven healthcare.
+---
+
+## 🛠️ Features
+
+| Service                   | Details                                                                 |
+|---------------------------|-------------------------------------------------------------------------|
+| 24/7 Dispensing           | Immediate in-store and delivery fulfilment                             |
+| HIV / BP / Glucose Tests | Quick screening tools powered by SAPC STGs                             |
+| Chronic Meds Delivery     | Monthly subscription and home drops with tracking                      |
+| e-Clinic Integration      | Remote consults + prescription uploads                                 |
+| Rx Locator & Booking     | Digital map locator and QR-based check-in system                       |
 
 ---
 
 ## 🤝 How to Contribute
 
-We’re looking for collaborators, developers, and healthcare professionals to help bring Pharma24 to life! Here’s how you can get involved:
+1. Fork the repo
+2. Submit feature suggestions (telehealth, mobile integration, etc.)
+3. Help localize content (Zulu, Afrikaans, Sotho welcome)
+4. Share with community pharmacies & NGOs
 
-1. **Fork this repository** and contribute ideas, code, or documentation.
-2. **Open an issue** to share feedback or suggest features (e.g., a pharmacy management system, telehealth integration).
-3. **Join the discussion** on potential locations, services, or partnerships.
-
-Check out our [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+> 💬 Let’s make accessible care real—one district at a time.
 
 ---
 
 ## 📬 Contact
 
-Interested in collaborating or investing in Pharma24? Reach out to me, Raydo, at [your-email@example.com] or open an issue on this repository.
+📨 **Raydo Matthee**  
+📧 [raydo@pharmalink24.co.za](mailto:raydo@pharmalink24.co.za)  
+🌐 [pharmalink24.co.za](https://burnt-exe.github.io/PharmaLink24/)
 
 ---
 
-## 🌟 Support Us
+## ⭐ Support Us
 
-If you believe in our mission to improve healthcare access in Johannesburg with Pharma24, give us a ⭐ on GitHub and share this project with your network!
+If you believe in community-driven healthcare:
+- Give this repo a ⭐
+- Share with your network
+- Mention us on social: `#PharmaLink24` `#CommunityPharmacy` `#HealthcareZA`
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Thank%20You-For%20Your%20Support-blueviolet?style=for-the-badge" alt="Thank You"/>
+  <img src="https://img.shields.io/badge/Built%20with%20❤️%20in-Johannesburg-blueviolet?style=for-the-badge"/>
 </p>
