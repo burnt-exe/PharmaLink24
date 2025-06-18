@@ -1,410 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharma24: Gauteng’s Healthcare Revolution</title>
-    <style>
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-            background: #f0f4f8;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 {
-            color: #154360;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        /* Header */
-        .header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #154360, #3498db);
-            color: white;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            animation: fadeInDown 1s ease;
-        }
-
-        .header p {
-            font-size: 1.3rem;
-            animation: fadeIn 1.5s ease;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: rgba(255, 255, 255, 0.1);
-            transform: rotate(30deg);
-            animation: rotateGlow 10s infinite linear;
-        }
-
-        /* Section Styles */
-        .section {
-            background: white;
-            padding: 40px;
-            margin-bottom: 40px;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            animation: slideInUp 1s ease;
-        }
-
-        .section h2 {
-            font-size: 2.2rem;
-            border-bottom: 3px solid #e67e22;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        /* Grid */
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
-        }
-
-        .content-item {
-            padding: 25px;
-            background: #ecf0f1;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .content-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Table */
-        .costs-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 0.95rem;
-        }
-
-        .costs-table th, .costs-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .costs-table th {
-            background: #154360;
-            color: white;
-        }
-
-        .costs-table tr:nth-child(even) {
-            background: #f9fbfc;
-        }
-
-        /* Calculator */
-        .calculator {
-            margin-top: 20px;
-            padding: 25px;
-            background: #fff3e6;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .calculator input, .calculator button {
-            padding: 12px;
-            margin: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 1rem;
-        }
-
-        .calculator button {
-            background: #e67e22;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        .calculator button:hover {
-            background: #d35400;
-            transform: scale(1.1);
-        }
-
-        /* CTA Button */
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #e67e22;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        .cta-button:hover {
-            background: #d35400;
-            transform: scale(1.05);
-        }
-
-        /* Graphics Placeholder */
-        .graphic {
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
-            display: block;
-            border-radius: 10px;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes rotateGlow {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header h1 { font-size: 2.2rem; }
-            .header p { font-size: 1.1rem; }
-            .section { padding: 25px; }
-            .content-grid { grid-template-columns: 1fr; }
-            .costs-table th, .costs-table td { padding: 10px; font-size: 0.85rem; }
-        }
-
-        @media (max-width: 480px) {
-            .header { padding: 40px 10px; }
-            .header h1 { font-size: 1.8rem; }
-            .section h2 { font-size: 1.6rem; }
-            .content-item { padding: 15px; }
-            .calculator input, .calculator button { width: 100%; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmaLink24: Community Pharmacy JHB</title>
+  <meta name="description" content="PharmaLink24 is a hybrid 24/7 community pharmacy in Johannesburg, blending retail service with clinical care, digital tools, and local partnerships.">
+  <meta property="og:title" content="PharmaLink24: Community Pharmacy JHB">
+  <meta property="og:description" content="Accessible healthcare, medication delivery, HIV testing, and e-clinic services, now available to all Joburg communities.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/burnt-exe/PharmaLink24/refs/heads/main/pharma-link-24-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/burnt-exe/PharmaLink24/1fc045e0a9e5fe79e9d138ee9df8f19c0032fd5d/pharma-link-24-logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #d4fcf9, #d1faff);
+      color: #033649;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background: linear-gradient(135deg, #00677a, #00acc1);
+      padding: 60px 20px;
+      color: white;
+      border-radius: 12px;
+      text-align: center;
+      position: relative;
+    }
+    .header img {
+      height: 60px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .section {
+      background: white;
+      margin-top: 40px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      color: #00677a;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .content-item {
+      background: #e0f7fa;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .content-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #00acc1;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #008896;
+    }
+    .graphic {
+      width: 100%;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+      .header img {
+        height: 40px;
+        top: 10px;
+        left: 10px;
+      }
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Pharma24: Gauteng’s Healthcare Revolution</h1>
-            <p>Hey Frankie, let’s transform lives in Johannesburg together!</p>
-        </header>
+  <div class="container">
+    <header class="header">
+      <img src="https://raw.githubusercontent.com/burnt-exe/PharmaLink24/1fc045e0a9e5fe79e9d138ee9df8f19c0032fd5d/pharma_link_24_svg_final.html" alt="PharmaLink24 Logo">
+      <h1>PharmaLink24: Johannesburg’s Community Pharmacy</h1>
+      <p>Digitally enabled. Clinically driven. Locally rooted.</p>
+    </header>
 
-        <!-- Introduction -->
-        <section class="section">
-            <h2>A Vision for Gauteng</h2>
-            <p>Frankie, I’m Raydo—driven by a decade-old memory in Germiston with Matt and Robby. Pharma24 is my bold plan for a 24/7 pharmacy in Johannesburg, tackling Gauteng’s urgent healthcare gaps. This isn’t just a business—it’s a lifeline for our community and a golden opportunity for you!</p>
-        </section>
+    <section class="section">
+      <h2>Executive Summary</h2>
+      <p>PharmaLink24 is a 24-hour community pharmacy in Johannesburg delivering integrated digital and in-person healthcare. We focus on script management, OTC access, HIV testing, chronic care, and wellness screening — all enabled by the Pharma24 Locator and STG tools. Backed by SAPC & SAHPRA compliance, our retail + e-clinic approach ensures service continuity and clinical reliability.</p>
+    </section>
 
-        <!-- Why Gauteng? -->
-        <section class="section">
-            <h2>Why Gauteng?</h2>
-            <div class="content-grid">
-                <div class="content-item" onclick="alert('Gauteng’s 15M+ people need reliable healthcare—Pharma24 delivers 24/7!')">
-                    <h3>High Demand</h3>
-                    <p>Gauteng’s 15M+ residents face pharmacy shortages, especially after hours.</p>
-                </div>
-                <div class="content-item" onclick="alert('6.7% annual growth—R643.5B market by 2025!')">
-                    <h3>Growth Potential</h3>
-                    <p>South Africa’s pharma market is booming—6.7% CAGR in Gauteng.</p>
-                </div>
-                <div class="content-item" onclick="alert('Serving Soweto to Sandton with accessible care.')">
-                    <h3>Community Impact</h3>
-                    <p>From Soweto to Sandton, we’ll bridge healthcare gaps.</p>
-                </div>
-            </div>
-            <img src="https://via.placeholder.com/600x300.png?text=Gauteng+Map+Graphic" alt="Gauteng Map" class="graphic">
-        </section>
+    <section class="section">
+      <h2>What We Offer</h2>
+      <div class="content-grid">
+        <div class="content-item"><h3>Dispensing + Delivery</h3><p>Chronic and acute prescription services, delivered 24/7 with live tracking.</p></div>
+        <div class="content-item"><h3>e-Clinic Consults</h3><p>Remote consultations, BP/glucose/HIV screening, and family planning.</p></div>
+        <div class="content-item"><h3>Vaccines & Adherence</h3><p>Immunisation campaigns and medication adherence programs.</p></div>
+        <div class="content-item"><h3>Locator + Booking</h3><p>Digital locator, Rx upload, scheduling, and repeat refill automation.</p></div>
+      </div>
+    </section>
 
-        <!-- Cost Breakdown -->
-        <section class="section">
-            <h2>Investment Breakdown</h2>
-            <p>Here’s what it takes to launch Pharma24 in Gauteng (ZAR):</p>
-            <table class="costs-table">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Description</th>
-                        <th>Cost (ZAR)</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Registration</td>
-                        <td>SAPC fees</td>
-                        <td>20,000 - 50,000</td>
-                        <td>Adjusted for 2025</td>
-                    </tr>
-                    <tr>
-                        <td>Pharmacist</td>
-                        <td>Full-time salary</td>
-                        <td>360,000 - 480,000/yr</td>
-                        <td>Competitive pay</td>
-                    </tr>
-                    <tr>
-                        <td>Rent</td>
-                        <td>50-100 sqm</td>
-                        <td>96,000 - 360,000/yr</td>
-                        <td>Germiston vs. Joburg</td>
-                    </tr>
-                    <tr>
-                        <td>Stock</td>
-                        <td>Initial inventory</td>
-                        <td>200,000 - 500,000</td>
-                        <td>Supplier-dependent</td>
-                    </tr>
-                    <tr>
-                        <td>Equipment</td>
-                        <td>Shelving, systems</td>
-                        <td>50,000 - 100,000</td>
-                        <td>SAPC standards</td>
-                    </tr>
-                    <tr>
-                        <td>Staffing</td>
-                        <td>1-2 assistants</td>
-                        <td>96,000 - 180,000/yr</td>
-                        <td>Support roles</td>
-                    </tr>
-                    <tr>
-                        <td>Utilities</td>
-                        <td>Electricity, insurance</td>
-                        <td>60,000 - 120,000/yr</td>
-                        <td>Liability included</td>
-                    </tr>
-                    <tr>
-                        <td>Marketing</td>
-                        <td>Signage, launch</td>
-                        <td>20,000 - 50,000</td>
-                        <td>Local focus</td>
-                    </tr>
-                    <tr>
-                        <td>Tech</td>
-                        <td>Software, hardware</td>
-                        <td>30,000 - 70,000</td>
-                        <td>Telehealth option</td>
-                    </tr>
-                    <tr>
-                        <td>Contingency</td>
-                        <td>Buffer</td>
-                        <td>50,000 - 100,000</td>
-                        <td>Unforeseen costs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td><strong>Startup + Year 1</strong></td>
-                        <td><strong>995,000 - 2,010,000</strong></td>
-                        <td>Gauteng-specific</td>
-                    </tr>
-                </tbody>
-            </table>
-            <img src="https://via.placeholder.com/600x300.png?text=Cost+Pie+Chart" alt="Cost Pie Chart" class="graphic">
-        </section>
+    <section class="section">
+      <h2>Investment Opportunity</h2>
+      <p>We are raising <strong>R450,000</strong> to launch PharmaLink24 in Johannesburg. This capital will fund our setup, licensing, marketing, and staffing. We offer:</p>
+      <ul>
+        <li>📈 <strong>30% equity stake</strong> in PharmaLink24 (Pty) Ltd</li>
+        <li>🔁 Optional buyback with 1.5× ROI after 3 years</li>
+        <li>📊 Quarterly reports and dividend distribution</li>
+        <li>🏢 Full SAPC & SAHPRA compliance</li>
+      </ul>
+      <p>Break-even projected in 6–8 months with ~35% gross margin. Strategic scale-up opportunities through franchising and licensing.</p>
+    </section>
 
-        <!-- Value Proposition -->
-        <section class="section">
-            <h2>Why Pharma24?</h2>
-            <div class="content-grid">
-                <div class="content-item">
-                    <h3>24/7 Lifeline</h3>
-                    <p>Rare 24-hour access for Gauteng’s urgent needs.</p>
-                </div>
-                <div class="content-item">
-                    <h3>Community First</h3>
-                    <p>Free screenings, building trust locally.</p>
-                </div>
-                <div class="content-item">
-                    <h3>Specialized Care</h3>
-                    <p>HIV testing, chronic meds delivery.</p>
-                </div>
-                <div class="content-item">
-                    <h3>Social Good</h3>
-                    <p>Fighting black market drugs.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Profitability -->
-        <section class="section">
-            <h2>Your Return on Impact</h2>
-            <p>Pharma24 promises profitability in 2-3 years:</p>
-            <ul>
-                <li><strong>Revenue:</strong> Year 1: R1,500,000 | Year 2: R2,800,000 | Year 3: R4,200,000 (15-20% growth).</li>
-                <li><strong>Break-Even:</strong> 18-24 months (500 customers, R500 avg.).</li>
-                <li><strong>Margin:</strong> 20-25% Year 1, 30% Year 3.</li>
-            </ul>
-            <div class="calculator">
-                <h3>See Your Returns!</h3>
-                <p>Enter your investment (ZAR):</p>
-                <input type="number" id="investment" min="0" placeholder="e.g., 1500000">
-                <button onclick="calculateReturns()">Calculate</button>
-                <p id="result" style="font-weight: bold; color: #154360;"></p>
-            </div>
-            <img src="https://via.placeholder.com/600x300.png?text=Revenue+Growth+Chart" alt="Revenue Chart" class="graphic">
-        </section>
-
-        <!-- Call to Action -->
-        <section class="section" style="text-align: center;">
-            <h2>Frankie, Let’s Do This!</h2>
-            <p>I need R1,500,000 to launch Pharma24—offering you equity and a stake in Gauteng’s future. Contact me to make it happen!</p>
-            <a href="mailto:your-email@example.com" class="cta-button">Join the Revolution</a>
-        </section>
-    </div>
-
-    <script>
-        function calculateReturns() {
-            const investment = parseFloat(document.getElementById('investment').value) || 0;
-            const year1Return = investment * 0.15; // 15% Year 1
-            const year2Return = investment * 0.25; // 25% Year 2
-            const year3Return = investment * 0.35; // 35% Year 3
-            const totalReturn = year1Return + year2Return + year3Return;
-
-            document.getElementById('result').innerHTML = `
-                Year 1: R${year1Return.toLocaleString('en-ZA')}<br>
-                Year 2: R${year2Return.toLocaleString('en-ZA')}<br>
-                Year 3: R${year3Return.toLocaleString('en-ZA')}<br>
-                <strong>Total: R${totalReturn.toLocaleString('en-ZA')}</strong>
-            `;
-        }
-    </script>
+    <section class="section" style="text-align: center;">
+      <h2>Get Involved</h2>
+      <p>Join us in reshaping pharmacy care in Gauteng. Let’s build the future of health access—together.</p>
+      <a href="mailto:raydo@pharmalink24.co.za?subject=PharmaLink24%20Investment" class="cta-button">Contact Raydo & Invest</a>
+    </section>
+  </div>
 </body>
 </html>
