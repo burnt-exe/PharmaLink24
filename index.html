@@ -1,139 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PharmaLink24: Community Pharmacy JHB</title>
-  <meta name="description" content="PharmaLink24 is a hybrid 24/7 community pharmacy in Johannesburg, blending retail service with clinical care, digital tools, and local partnerships.">
-  <meta property="og:title" content="PharmaLink24: Community Pharmacy JHB">
-  <meta property="og:description" content="Accessible healthcare, medication delivery, HIV testing, and e-clinic services, now available to all Joburg communities.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/burnt-exe/PharmaLink24/refs/heads/main/pharma-link-24-logo.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="PharmaLink24/pharma-link-24-logo.png">  <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharma24 README</title>
+  <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #d4fcf9, #d1faff);
+      background: #f4f9fb;
       color: #033649;
+      padding: 40px;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 20px;
+    h1, h2, h3 {
+      color: #00677a;
     }
-    .header {
-      background: linear-gradient(135deg, #00677a, #00acc1);
-      padding: 60px 20px;
-      color: white;
-      border-radius: 12px;
-      text-align: center;
-      position: relative;
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
     }
-    .header img {
-      height: 60px;
-      position: absolute;
-      top: 20px;
-      left: 20px;
+    .badge-container img {
+      margin: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table th, table td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    table th {
+      background-color: #e0f7fa;
     }
     .section {
-      background: white;
-      margin-top: 40px;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
     }
-    .section h2 {
-      color: #00677a;
-      font-size: 2rem;
-      margin-bottom: 15px;
+    .highlight {
+      background: #d1faff;
+      padding: 1em;
+      border-left: 5px solid #00acc1;
     }
-    .content-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .content-item {
-      background: #e0f7fa;
-      padding: 20px;
-      border-radius: 10px;
+    .center {
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .content-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-    .cta-button {
+    .cta {
       display: inline-block;
       margin-top: 20px;
-      background-color: #00acc1;
+      background: #00acc1;
       color: white;
-      padding: 15px 30px;
+      padding: 10px 25px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s ease;
     }
-    .cta-button:hover {
-      background-color: #008896;
-    }
-    .graphic {
-      width: 100%;
-      margin-top: 30px;
-      border-radius: 10px;
-    }
-    @media (max-width: 600px) {
-      .header img {
-        height: 40px;
-        top: 10px;
-        left: 10px;
-      }
-      .section {
-        padding: 20px;
-      }
+    .cta:hover {
+      background: #008896;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="https://raw.githubusercontent.com/burnt-exe/PharmaLink24/refs/heads/main/pharma-link-24-logo.png" alt="PharmaLink24 Logo">
-      <h1>PharmaLink24: Johannesburg’s Community Pharmacy</h1>
-      <p>Digitally enabled. Clinically driven. Locally rooted.</p>
-    </header>
+  <h1>💊 Pharma24: 24/7 Community Pharmacy in Johannesburg</h1>
 
-    <section class="section">
-      <h2>Executive Summary</h2>
-      <p>PharmaLink24 is a 24-hour community pharmacy in Johannesburg delivering integrated digital and in-person healthcare. We focus on script management, OTC access, HIV testing, chronic care, and wellness screening — all enabled by the Pharma24 Locator and STG tools. Backed by SAPC & SAHPRA compliance, our retail + e-clinic approach ensures service continuity and clinical reliability.</p>
-    </section>
-
-    <section class="section">
-      <h2>What We Offer</h2>
-      <div class="content-grid">
-        <div class="content-item"><h3>Dispensing + Delivery</h3><p>Chronic and acute prescription services, delivered 24/7 with live tracking.</p></div>
-        <div class="content-item"><h3>e-Clinic Consults</h3><p>Remote consultations, BP/glucose/HIV screening, and family planning.</p></div>
-        <div class="content-item"><h3>Vaccines & Adherence</h3><p>Immunisation campaigns and medication adherence programs.</p></div>
-        <div class="content-item"><h3>Locator + Booking</h3><p>Digital locator, Rx upload, scheduling, and repeat refill automation.</p></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Investment Opportunity</h2>
-      <p>We are raising <strong>R450,000</strong> to launch PharmaLink24 in Johannesburg. This capital will fund our setup, licensing, marketing, and staffing. We offer:</p>
-      <ul>
-        <li>📈 <strong>30% equity stake</strong> in PharmaLink24 (Pty) Ltd</li>
-        <li>🔁 Optional buyback with 1.5× ROI after 3 years</li>
-        <li>📊 Quarterly reports and dividend distribution</li>
-        <li>🏢 Full SAPC & SAHPRA compliance</li>
-      </ul>
-      <p>Break-even projected in 6–8 months with ~35% gross margin. Strategic scale-up opportunities through franchising and licensing.</p>
-    </section>
-
-    <section class="section" style="text-align: center;">
-      <h2>Get Involved</h2>
-      <p>Join us in reshaping pharmacy care in Gauteng. Let’s build the future of health access—together.</p>
-      <a href="mailto:raydo@pharmalink24.co.za?subject=PharmaLink24%20Investment" class="cta-button">Contact Raydo & Invest</a>
-    </section>
+  <div class="badge-container">
+    <img src="https://img.shields.io/badge/Pharma24-24%2F7%20Healthcare-blue?style=for-the-badge&logo=medical-services&logoColor=white" alt="Pharma24 badge">
+    <img src="https://img.shields.io/github/repo-size/burnt-exe/Pharma24?style=flat-square" alt="Repo Size">
+    <img src="https://img.shields.io/github/issues/burnt-exe/Pharma24?style=flat-square" alt="Issues">
+    <img src="https://img.shields.io/github/stars/burnt-exe/Pharma24?style=flat-square" alt="Stars">
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+    <img src="https://komarev.com/ghpvc/?username=burnt-exe&label=Profile%20Views&color=brightgreen&style=flat-square" alt="Views">
   </div>
+
+  <div class="section">
+    <h2>🌍 Vision</h2>
+    <p><strong>Pharma24</strong> is a digital-first, 24-hour community pharmacy and e-clinic concept launching in Johannesburg. We’re building a high-trust, tech-enabled healthcare experience that bridges retail pharmacy, mobile consultation, and chronic disease support.</p>
+    <div class="highlight">
+      Inspired by memories in Germiston with Matt and Robby, this mission is grounded in community healing, continuous access, and social impact.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📖 What Is Pharma24?</h2>
+    <ul>
+      <li>24/7 retail pharmacy access (including OTC & prescriptions)</li>
+      <li>HIV testing, chronic meds, and mobile consults</li>
+      <li>Smart Rx refills and delivery, via PharmaLink24 Locator</li>
+      <li>SAPC & SAHPRA-compliant systems</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🌟 Value Pillars</h2>
+    <table>
+      <tr><th>Pillar</th><th>Impact</th></tr>
+      <tr><td>24/7 Availability</td><td>Always open, addressing Johannesburg's urgent demand</td></tr>
+      <tr><td>Community Health</td><td>Free screenings, family planning, health awareness</td></tr>
+      <tr><td>Clinical Integration</td><td>Bookings, teleconsults, EMR & adherence programs</td></tr>
+      <tr><td>Equity & Access</td><td>Serving Soweto, Germiston, Diepsloot, Midrand</td></tr>
+      <tr><td>Economic Growth</td><td>Franchise-ready, youth employment pipeline</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>💸 Startup Requirements</h2>
+    <table>
+      <tr><th>Cost Category</th><th>Range (ZAR)</th><th>Notes</th></tr>
+      <tr><td>Licensing & SAPC</td><td>20,000 - 50,000</td><td>Legal and council fees</td></tr>
+      <tr><td>Pharmacist Salary</td><td>360,000 - 480,000/year</td><td>Licensed professional</td></tr>
+      <tr><td>Rent (Midrand)</td><td>96,000 - 360,000/year</td><td>Retail parks</td></tr>
+      <tr><td>Equipment & Stock</td><td>250,000 - 600,000</td><td>Dispensers, shelves, etc.</td></tr>
+      <tr><td>Branding & Digital</td><td>50,000 - 100,000</td><td>Platform + signage</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>💼 Investment Opportunity</h2>
+    <ul>
+      <li>Raise target: <strong>R450,000</strong> for pilot site</li>
+      <li>30% equity in PharmaLink24 (Pty) Ltd</li>
+      <li>Optional buyout after 3 years (1.5× ROI)</li>
+      <li>Quarterly dividends + potential board seat</li>
+    </ul>
+  </div>
+
+  <div class="section center">
+    <h2>🤝 Join the Movement</h2>
+    <p>Contribute, partner, or invest in the future of digital community healthcare.</p>
+    <a class="cta" href="mailto:raydo@pharmalink24.co.za">Contact Raydo</a>
+  </div>
+
 </body>
 </html>
